@@ -33,7 +33,7 @@ function evaluateEquation(equation){
     // valid operands are: digits from 0-9
     const operandsArray = equation.match(/\d+/g) || [];
 
-    // splits operators from the input equation and stores each operator into the opperatorsArray
+    // splits operators from the input equation and stores each operator into the operatorsArray
     // valid operators are: +, -, *, /
     const operatorsArray = equation.match(/\+|\-|\*|\//g) || [];
 
@@ -41,9 +41,9 @@ function evaluateEquation(equation){
 
     let result = parseFloat(operandsArray[0]); // the first opperand in the array
 
-    // loops through the entire operatorsArray until there are no more opperators left.
+    // loops through the entire operatorsArray until there are no more operators left.
     for (let i = 0; i < operatorsArray.length; i++){
-        // i = 0 is the first opperator in the array
+        // i = 0 is the first operator in the array
     
         switch (operatorsArray[i]){
             // performs the operation depending on the operator
