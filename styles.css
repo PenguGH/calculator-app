@@ -1,0 +1,80 @@
+#calculatorShell{
+    width: 300px;
+    height: 375px;
+    background: red;
+}
+
+#display{
+    margin-top: 20px;
+    margin-left:18px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding:8px;
+}
+
+.numberButton{
+    margin: 10px;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.numberButton:hover {
+    background-color: #004da0;
+}
+
+
+.operationButton, .totalButton{
+    margin: 10px;
+    background-color: #000000;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.operationButton:hover, .totalButton:hover {
+    background-color: #2b2b2b;
+}
+
+
+.clearButton{
+    margin: 10px;
+    background-color: #848484;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.clearButton:hover {
+    background-color: #acacac;
+}
+/*For larger devices*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:aquamarine;
+}
+
+/*For mobile devices*/
+@media only screen and (max-width: 600px) {
+    body{
+        display: inline;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+}

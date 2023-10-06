@@ -11,6 +11,39 @@
     </head>
    
 <body>
+    <div id="calculatorShell">
+
+        <div class="buttons">
+            <input type ="text" id="display" readonly>
+            <br>
+            <input type="button" class="numberButton" value="7" onclick="appendNumber('7')">
+            <input type="button" class="numberButton" value="8" onclick="appendNumber('8')">
+            <input type="button" class="numberButton" value="9" onclick="appendNumber('9')">
+            <input type="button" class="operationButton" value="+" onclick="appendOperator('+')">
+            <br>
+    
+            <input type="button" class="numberButton" value="4" onclick="appendNumber('4')">
+            <input type="button" class="numberButton" value="5" onclick="appendNumber('5')">
+            <input type="button" class="numberButton" value="6" onclick="appendNumber('6')">
+            <input type="button" class="operationButton" value="-" onclick="appendOperator('-')">
+            <br>
+    
+            <input type="button" class="numberButton" value="1" onclick="appendNumber('1')">
+            <input type="button" class="numberButton" value="2" onclick="appendNumber('2')">
+            <input type="button" class="numberButton" value="3" onclick="appendNumber('3')">
+            <input type="button" class="operationButton" value="X" onclick="appendOperator('*')">
+            <br>
+    
+            <input type="button" class="clearButton" value="C" onclick="clearDisplay()">
+            <input type="button" class="numberButton" value="0" onclick="appendNumber('0')">
+            <input type="button" class="totalButton" value="=" onclick="calculateAnswer()">
+            <input type="button" class="operationButton" value="/" onclick="appendOperator('/')">
+        </div>
+    </div>
+
+
+    <script src="script.js">
+    </script>
 
 </body>
 
